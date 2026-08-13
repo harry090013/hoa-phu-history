@@ -987,3 +987,65 @@ img {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* Community Photos Grid (Merger) */
+.community-photos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+.community-photo-card {
+    background: var(--white);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.community-photo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.community-photo-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.community-photo-card .caption {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: var(--space-sm);
+    text-align: center;
+    color: var(--green-deep);
+}
+
+/* Section Banner Images (Tri An, Dat & Nguoi, Ban Sac) */
+.section-image-box {
+    margin-bottom: var(--space-lg);
+}
+
+.section-banner-img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-soft);
+    transition: transform 0.3s ease;
+}
+
+.section-banner-img:hover {
+    transform: scale(1.02);
+}
+
+@media (min-width: 576px) {
+    .community-photos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
